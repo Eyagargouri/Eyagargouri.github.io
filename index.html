@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio d’Eya Gargouri, étudiante en ingénierie informatique à Sfax. Projets en IA appliquée et développement full-stack.">
+<title>Eya Gargouri | Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#14141b;--panel:#1d1d28;--paper:#f6f1ea;--muted:#c7c2d0;--line:#393646;--accent:#d8ffac;--pink:#e5c6fd}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--paper);font:1rem/1.65 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:.25em}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.wrap{width:min(1120px,calc(100% - 3rem));margin-inline:auto}
+header{border-bottom:1px solid var(--line)}
+nav,.links{display:flex;align-items:center;gap:.75rem 1.6rem;flex-wrap:wrap}
+nav{min-height:76px;justify-content:space-between;padding-block:.8rem}
+nav a{text-decoration:none}
+.brand{font-weight:750}.brand b{color:var(--accent)}
+.hero{padding:clamp(4rem,10vw,8rem) 0;display:grid;grid-template-columns:1.6fr 1fr;align-items:center;gap:3rem}
+h1,h2,h3,p{margin:0}
+h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-.055em}
+h1{font-size:clamp(3.6rem,9.4vw,8.4rem)}
+h2{font-size:clamp(2.45rem,5vw,4.6rem)}
+h3{font-size:1.22rem;line-height:1.28}
+.kicker,.meta{font: .875rem/1.5 ui-monospace,monospace;color:var(--accent)}
+.hero .kicker{margin-bottom:1rem}
+.role{font-size:clamp(1.25rem,3vw,2rem);color:var(--pink);margin:.9rem 0}
+p{color:var(--muted)}
+.hero p{max-width:54ch}
+.actions{margin-top:1.6rem}
+.button{display:inline-block;background:var(--accent);color:#172112;padding:.68rem 1.1rem;border-radius:.35rem;text-decoration:none;font-weight:700}
+.button:hover{color:#172112;background:#eeffdc}
+.monogram{margin:0;aspect-ratio:1;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:radial-gradient(circle at 36% 30%,#61475e 0%,#31293f 48%,#181821 75%);position:relative}
+.monogram::before,.monogram::after{content:"";position:absolute;inset:9%;border:1px solid #a38aa7;border-radius:50%;transform:rotate(-36deg) scaleY(.42)}
+.monogram::after{transform:rotate(36deg) scaleY(.42)}
+.monogram span{font:italic clamp(4rem,10vw,9rem)/1 Georgia,serif;letter-spacing:-.12em;padding-right:.12em;color:var(--pink);z-index:1;text-shadow:0 3px 18px #221829}
+section.content{padding:3.25rem 0;border-top:1px solid var(--line)}
+.section-title{margin-bottom:1.65rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.card{border:1px solid var(--line);border-radius:.7rem;background:var(--panel);padding:clamp(1.2rem,3vw,2rem)}
+.card h3,.row h3{margin:.25rem 0 .55rem}
+.featured{grid-column:1/-1;background:linear-gradient(120deg,#292337,#1d1d28);border-color:#655676}
+.featured h3{font-size:clamp(1.4rem,3vw,2.2rem)}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;padding:0;margin:1rem 0 0;list-style:none}
+.tags li{border:1px solid #575166;border-radius:99px;padding:.13rem .6rem;font-size:.875rem;color:var(--pink)}
+.row{display:grid;grid-template-columns:minmax(9rem,1fr) 3fr;gap:1rem;padding:1.15rem 0;border-bottom:1px solid var(--line)}
+.row h3{margin-top:0}
+footer{padding:1.6rem 0;border-top:1px solid var(--line);color:var(--muted)}
+#contact p{margin:.8rem 0 1.1rem}
+@media(max-width:740px){.hero{grid-template-columns:1fr;gap:2rem}.monogram{width:min(70%,250px);justify-self:center}.grid,.row{grid-template-columns:1fr}.row{gap:.25rem}.wrap{width:calc(100% - 2rem)}}
+</style>
+</head>
+<body id="haut">
+<header><nav class="wrap" aria-label="Navigation principale">
+<a class="brand" href="#haut"><b>EG</b> / Eya Gargouri</a>
+<div class="links"><a href="#projets">Projets</a><a href="#experience">Expérience</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></div>
+</nav></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="nom">
+<div>
+<p class="kicker">Sfax, Tunisie · Recherche de stage PFE</p>
+<h1 id="nom">Eya Gargouri</h1>
+<p class="role">IA appliquée &amp; développement full-stack</p>
+<p>Étudiante en dernière année d’ingénierie informatique à l’Institut International de Technologie de Sfax, je développe des applications métier qui intègrent le traitement du langage, l’OCR et les modèles de langage.</p>
+<div class="links actions"><a class="button" href="#projets">Voir mes projets</a><a href="#contact">Me contacter</a></div>
+</div>
+<div class="monogram" aria-hidden="true"><span>EG</span></div>
+</section>
+<section class="content" id="projets">
+<h2 class="section-title">Projets</h2>
+<div class="grid">
+<article class="card featured"><p class="meta">Mars – juin 2026 · IA appliquée</p><h3>Préinscriptions universitaires</h3><p>Une plateforme qui extrait les données des dossiers avec MiniCPM-V, puis recommande des filières selon le profil de chaque candidat avec Mistral 7B exécuté localement via Ollama.</p><ul class="tags"><li>OCR</li><li>MiniCPM-V</li><li>Mistral 7B</li><li>Ollama</li></ul></article>
+<article class="card"><p class="meta">Mai 2026 · Mobile</p><h3>Application mobile d’accessibilité</h3><p>Une application d’assistance qui combine reconnaissance d’images, lecture de texte par OCR et traduction multilingue pour faciliter l’accès à l’information au quotidien.</p></article>
+<article class="card"><p class="meta">Mai 2026 · Web</p><h3>Boutique de produits de luxe</h3><p>Une plateforme de vente en ligne avec gestion des produits, des commandes et des utilisateurs.</p><ul class="tags"><li>Angular</li><li>Next.js</li><li>MongoDB</li></ul></article>
+<article class="card"><p class="meta">Mai 2025 · Web</p><h3>Plateforme de gestion des ventes</h3><p>Une application qui centralise le suivi des produits et des ventes.</p><ul class="tags"><li>ASP.NET</li><li>Blazor</li><li>SQL Server</li></ul></article>
+<article class="card"><p class="meta">Projet d’équipe · Backend</p><h3>NightClub Reservation Platform</h3><p>Plateforme de réservation organisée en microservices. Mon périmètre couvre les services de contrôle d’accès et de gestion du menu.</p><ul class="tags"><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li></ul></article>
+</div>
+</section>
+<section class="content" id="experience">
+<h2 class="section-title">Expérience</h2>
+<article class="row"><p class="meta">Août – sept. 2026</p><div><h3>EdiSolutions · Chatbot Text-to-SQL</h3><p>Développement d’un chatbot qui permet d’interroger SQL Server en langage naturel avec l’API OpenAI, Python et FastAPI, avec intégration de WhatsApp Cloud API.</p></div></article>
+<article class="row"><p class="meta">Juil. – août 2025</p><div><h3>NextWave Consulting · Plateforme de candidatures</h3><p>Développement d’une application de mise en relation entre entreprises et étudiants, avec publication des offres, suivi des candidatures et accès par rôle via JWT.</p></div></article>
+<article class="row"><p class="meta">Fév. – juin 2024</p><div><h3>EdiSolutions · Gestion des ressources humaines</h3><p>Développement d’une application de gestion des employés, des congés et des absences avec React et ASP.NET. Participation aux tests et à la mise en production.</p></div></article>
+<article class="row"><p class="meta">Juin – juil. 2023</p><div><h3>JolieJaune · Suivi des livraisons</h3><p>Développement d’une application de bureau WinDev pour gérer les commandes, suivre les livraisons et éditer les bons de livraison.</p></div></article>
+</section>
+<section class="content" id="competences">
+<h2 class="section-title">Compétences</h2>
+<div class="grid">
+<div class="card"><h3>IA et données</h3><p>API OpenAI, Ollama, NLP, OCR, prompt engineering, Pandas, Matplotlib</p></div>
+<div class="card"><h3>Backend</h3><p>Python, FastAPI, Java, Spring Boot, ASP.NET Core, API REST, JWT</p></div>
+<div class="card"><h3>Frontend et mobile</h3><p>React, Angular, Flutter, Dart</p></div>
+<div class="card"><h3>Bases de données et outillage</h3><p>SQL Server, MySQL, PostgreSQL, MongoDB, Git, GitHub, Docker, UML, Ansible</p></div>
+</div>
+</section>
+<section class="content" id="formation">
+<h2 class="section-title">Formation</h2>
+<article class="row"><p class="meta">Depuis sept. 2024</p><div><h3>Génie logiciel et informatique décisionnelle</h3><p>Institut International de Technologie · Sfax</p></div></article>
+<article class="row"><p class="meta">2021 – 2024</p><div><h3>Génie logiciel et système d’information</h3><p>Institut International de Technologie · Sfax</p></div></article>
+<article class="row"><p class="meta">2023</p><div><h3>Certifications</h3><p>TOEIC et Scrum Fondamentaux</p></div></article>
+</section>
+<section class="content" id="contact">
+<h2>Contact</h2>
+<p>Je recherche un stage de fin d’études en IA, développement logiciel ou ingénierie des données.</p>
+<div class="links"><a class="button" href="mailto:gargourieya15@gmail.com">M’écrire</a><a href="https://github.com/Eyagargouri">GitHub</a><a href="https://www.linkedin.com/in/eya-gargouri-722834203/">LinkedIn</a></div>
+</section>
+</main>
+<footer><div class="wrap">Eya Gargouri</div></footer>
+</body>
+</html>
